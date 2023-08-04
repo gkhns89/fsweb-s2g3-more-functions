@@ -39,8 +39,12 @@ function dosyaAdiniBul(xPath) {
   örnek output: 104
 */
 
-function ortalamaBul(/* kodlar buraya */) {
-  // kodlar buraya
+function ortalamaBul(arr) {
+  if (arr.length === 0) {
+    return null;
+  }
+  const total = arr.reduce((total, x) => total + x);
+  return total / arr.length;
 }
 
 /*
