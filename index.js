@@ -16,8 +16,9 @@
   örnek output: ""
 */
 
-function dosyaAdiniBul(/* kodlar buraya */) {
-  // kodlar buraya
+function dosyaAdiniBul(xPath) {
+  const fileName = xPath.split("/").pop();
+  return fileName;
 }
 
 /*
